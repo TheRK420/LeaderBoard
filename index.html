@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeaderBoard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@2011&family=Rubik+Burned&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>LeaderBoard</h1>
+      <div id="addPlayerForm">
+        <input type="text" id="firstName" placeholder="First Name" required />
+        <input type="text" id="lastName" placeholder="Last Name" required />
+        <input type="text" id="country" placeholder="Country" required />
+        <input type="number" id="score" placeholder="Player Score" required />
+
+        <button class="adp" onclick="addPlayer()">Add Player</button>
+      </div>
+    </div>
+
+    <table id="scoreTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Country</th>
+          <th>Score</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>
